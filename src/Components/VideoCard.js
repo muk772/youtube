@@ -1,7 +1,7 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const VideoCard = ({ info }) => {
-  console.log(info);
   const { snippet, statistics } = info;
 
   const { channelTitle, thumbnails, title } = snippet;
