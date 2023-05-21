@@ -77,7 +77,6 @@ const Comment = ({ data }) => {
 };
 
 const CommentsList = ({ comments }) => {
-  console.log(comments);
   return (
     <>
       {comments.map((curelem) => {
