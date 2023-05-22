@@ -20,7 +20,7 @@ const LiveCommentCard = ({ name, comment }) => {
 
 const LiveChat = () => {
   useEffect(() => {
-    const timer = setInterval(() => hanldeCommentsGenerator(), 3000);
+    const timer = setInterval(() => hanldeCommentsGenerator(), 1000);
 
     return () => clearInterval(timer);
   }, []);
@@ -34,11 +34,11 @@ const LiveChat = () => {
       })
     );
   };
-  const liveComments = useSelector((store) => store.chatSlice.chats);
-  console.log(liveComments);
+  const liveCommentary = useSelector((store) => store.chatSlice.chats);
+  const liveComments = [...liveCommentary].reverse();
 
   return (
-    <div className="w-full h-[500px] ml-2 p-2 border border-black bg-slate-100 rounded-lg overflow-y-scroll flex flex-col">
+    <div className="w-full h-[500px] ml-2 p-2 border border-black bg-slate-100 rounded-lg overflow-y-scroll flex flex-col-reverse">
       <div className="">
         {liveComments.map((curelem, index) => {
           return (
