@@ -4,12 +4,13 @@ import Button from "./Button";
 const preferencesList = [
   "All",
   "Misxes",
-  "Jethalal Champaklal",
+  "RAJ RIYA",
   "Live",
   "Recent",
   "Cricket",
   "UPSC",
-  "AI 💘 Blockchain",
+  "AI Blockchain",
+  "ANKIT PATHAK BABA",
 ];
 const ButtonList = () => {
   return (
